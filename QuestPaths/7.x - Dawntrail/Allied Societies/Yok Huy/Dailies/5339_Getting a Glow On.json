@@ -1,0 +1,172 @@
+{
+  "$schema": "https://qstxiv.github.io/schema/quest-v1.json",
+  "Author": "alydev,Kiarra,mrguffels,erdelf",
+  "LastChecked": {
+    "Username": "alydev",
+    "Date": "2025-10-13"
+  },
+  "QuestSequence": [
+    {
+      "Sequence": 0,
+      "Steps": [
+        {
+          "DataId": 1054635,
+          "Position": {
+            "X": 493.2173,
+            "Y": 142.24991,
+            "Z": 783.0471
+          },
+          "TerritoryId": 1187,
+          "InteractionType": "AcceptQuest",
+          "Fly": true,
+          "AetheryteShortcut": "Urqopacha - Worlar's Echo",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 493.2173,
+                  "Y": 142.24991,
+                  "Z": 783.0471
+                },
+                "TerritoryId": 1187,
+                "MaximumDistance": 300
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Sequence": 1,
+      "Steps": [
+        {
+          "$": "Recovery",
+          "Position": {
+            "X": 493.2173,
+            "Y": 142.24991,
+            "Z": 783.0471
+          },
+          "TerritoryId": 1187,
+          "InteractionType": "WalkTo",
+          "Fly": true,
+          "AetheryteShortcut": "Urqopacha - Worlar's Echo",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "InSameTerritory": true
+            },
+            "StepIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 493.2173,
+                  "Y": 142.24991,
+                  "Z": 783.0471
+                },
+                "TerritoryId": 1187,
+                "MaximumDistance": 300
+              }
+            }
+          }
+        },
+        {
+          "DataId": 1055818,
+          "Position": {
+            "X": 583.276,
+            "Y": 120.7841,
+            "Z": 382.55884
+          },
+          "TerritoryId": 1187,
+          "InteractionType": "Interact",
+          "Fly": true,
+          "RequiredQuestVariables": [
+            null,
+            [
+              {
+                "Low": 3
+              }
+            ],
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "DataId": 1055819,
+          "Position": {
+            "X": 442.31323,
+            "Y": 101.649635,
+            "Z": 363.21045
+          },
+          "TerritoryId": 1187,
+          "InteractionType": "Interact",
+          "Fly": true,
+          "RequiredQuestVariables": [
+            null,
+            [
+              {
+                "Low": 1
+              }
+            ],
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "DataId": 1055820,
+          "Position": {
+            "X": 379.50696,
+            "Y": 78.73412,
+            "Z": 440.63464
+          },
+          "TerritoryId": 1187,
+          "InteractionType": "Interact",
+          "Fly": true,
+          "RequiredQuestVariables": [
+            null,
+            [
+              {
+                "Low": 2
+              }
+            ],
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "Sequence": 255,
+      "Steps": [
+        {
+          "DataId": 1054635,
+          "Position": {
+            "X": 493.2173,
+            "Y": 142.24991,
+            "Z": 783.0471
+          },
+          "TerritoryId": 1187,
+          "InteractionType": "CompleteQuest",
+          "Fly": true,
+          "AetheryteShortcut": "Urqopacha - Worlar's Echo",
+          "SkipConditions": {
+            "AetheryteShortcutIf": {
+              "NearPosition": {
+                "Position": {
+                  "X": 493.2173,
+                  "Y": 142.24991,
+                  "Z": 783.0471
+                },
+                "TerritoryId": 1187,
+                "MaximumDistance": 200
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
